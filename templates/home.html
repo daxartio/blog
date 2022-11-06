@@ -1,0 +1,27 @@
+{% import "post_macros.html" as post_macros %}
+{% extends "index.html" %}
+
+{% block content %}
+{% set posts = get_section(path="posts" ~ "/_index.md") %}
+<div class="posts">
+    {% for page in posts.pages %}
+        <article class="post">
+            {{ post_macros::title(page=page) }}
+            <div class="post__summary">
+                {{ page.summary | safe }}
+            </div>
+            <div class="read-more">
+                <a href="{{ page.permalink }}">Read more...</a>
+            </div>
+        </article>
+    {% endfor %}
+</div>
+<nav class="pagination">
+    {% if posts.previous %}
+        <a class="previous" href="{{ posts.previous }}">‹ Previous</a>
+    {% endif %}
+    {% if posts.next %}
+        <a class="next" href="{{ posts.next }}">Next ›</a>
+    {% endif %}
+</nav>
+{% endblock content %}

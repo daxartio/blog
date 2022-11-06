@@ -1,20 +1,23 @@
 # The URL the site will be built for
-base_url = "https://daxartio.github.io/blog/"
+base_url = "https://daxartio.github.io/blog"
 
 title = "Developer Blog"
 description = "Blog of Danil Akhtarov"
 
 # The site theme to use.
-theme = "papaya"
+theme = "even"
 
 # The default language; used in feeds.
-default_language = "en"
+default_language = "ru"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
+# When set to "true", the generated HTML files are minified.
+minify_html = true
+
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
 # When set to "true", a feed is automatically generated.
 generate_feed = true
@@ -32,17 +35,19 @@ highlight_code = true
 
 # The theme to use for code highlighting.
 # See Zola configuration docs for list of allowed values.
-highlight_theme = "material-light"
+highlight_theme = "material-dark"
 
 [extra]
 # Put all your custom variables here
 env = "ZOLA_ENV"
 
-menu_items = [
-    { name = "posts", url = "$LANG_BASE_URL/posts", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
-    { name = "tags", url = "$LANG_BASE_URL/tags" },
-    { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
+even_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/posts", name = "Posts"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "$BASE_URL/about", name = "About"},
 ]
+even_title = "Dev Blog"
 
 [extra.images]
 # Width defined in pixels
@@ -67,7 +72,7 @@ twitter = "daxartio"
 [languages]
 
 [languages.en]
-title = "Danil Akhtarov"
+title = "Danil Akhtarov | Dev Blog"
 description = "Blog of Danil Akhtarov"
 generate_feed = true
 feed_filename = "atom.xml"
@@ -98,3 +103,36 @@ prev_page = "To newer posts"
 next_page = "To older posts"
 # Customize your post date format. See: https://tera.netlify.app/docs/#date
 date_format = "%B %e, %Y"
+
+[languages.ru]
+title = "Данил Ахтаров | Блог разработчика"
+description = "Личный блог"
+generate_feed = true
+feed_filename = "atom.xml"
+taxonomies = [
+    { name = "tags", feed = true, lang = "ru" },
+    { name = "categories", feed = true, lang = "ru" },
+]
+
+[languages.ru.translations]
+projects = "Проекты"
+blog = "Блог"
+posts = "Посты"
+about = "Об о мне"
+recent_projects = "Последние проекты"
+more_projects = "Больше"
+recent_blog_posts = "Последние посты"
+more_blog_posts = "Больше постов"
+tag = "Тег"
+tags = "Теги"
+to_all_tags = "Ко всем тегам"
+category = "Категория"
+categories = "Категории"
+to_all_categories = "Ко всем котегориям"
+view_by = "Посмотреть по"
+other = "Другое"
+minute = "мин"
+prev_page = "Новым посты"
+next_page = "Старые посты"
+# Customize your post date format. See: https://tera.netlify.app/docs/#date
+date_format = "%_d %b %Y"

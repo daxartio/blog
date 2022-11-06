@@ -2,6 +2,6 @@
 title = "Блог"
 
 sort_by = "date"
-paginate_by = 20
-template = "index.html"
+paginate_by = 5
+template = "home.html"
 +++
