@@ -43,9 +43,7 @@ env = "ZOLA_ENV"
 
 even_menu = [
     {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/posts", name = "Posts"},
     {url = "$BASE_URL/tags", name = "Tags"},
-    {url = "$BASE_URL/about", name = "About"},
 ]
 even_title = "Dev Blog"
 
