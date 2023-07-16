@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "daxartio-blog"
+version = "0.1.0"
+description = ""
+authors = ["Danil Akhtarov <daxartio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.4.3"
+mkdocs-material = {version="^9.2.0b0", allow-prereleases=true}
+mkdocs-rss-plugin = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
