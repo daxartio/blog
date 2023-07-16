@@ -16,7 +16,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install python dependencies
-        run: pip install poetry && poetry install
+        run: make install-poetry install
+
+      - name: Build
+        run: make docs
 
       - name: Deploy pages
         uses: peaceiris/actions-gh-pages@v3
