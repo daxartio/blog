@@ -2,6 +2,7 @@ site_name: Junior's way
 site_description: A blog about programming and life
 site_url: https://daxartio.github.io/blog/
 docs_dir: content
+locale: en
 
 copyright: Copyright &copy; 2023 Danil Akhtarov
 
@@ -27,6 +28,7 @@ plugins:
       match_path: posts/.*
       date_from_meta:
         as_creation: date
+      abstract_chars_count: -1
 
 markdown_extensions:
   - admonition
