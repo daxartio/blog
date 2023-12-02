@@ -66,14 +66,14 @@ tags:
 ```make
 .PHONY: changelog
 changelog:
-	auto-changelog -v $(v)
+    auto-changelog -v $(v)
 
 .PHONY: bump
 bump:
-	poetry version $(v)
-	make changelog v=$(v)
-	git add . && git commit -m "bump: version $(v)"
-	git tag -m "" -a $(v)
+    poetry version $(v)
+    make changelog v=$(v)
+    git add . && git commit -m "bump: version $(v)"
+    git tag -m "" -a $(v)
 ```
 
 Я случайно наткнулся на [commitizen](https://github.com/commitizen-tools/commitizen). Люблю github, всегда предлагает интересные проекты, а я их смотрю вместо постов из какой-либо сети.

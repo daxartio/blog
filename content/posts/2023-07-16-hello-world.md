@@ -4,7 +4,7 @@ comments: true
 authors:
   - daxartio
 categories:
-  - free
+  - other
 ---
 
 # Hello world!
