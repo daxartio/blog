@@ -10,11 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://daxartio.github.io/blog/2023/07/16/hello-world/">
+        <link rel="canonical" href="https://daxartio.github.io/blog/2023/12/02/%D0%BF%D0%B8%D1%88%D0%B5%D0%BC-%D0%BD%D0%B0-rust-%D0%B4%D0%BB%D1%8F-python/">
       
       
+        <link rel="prev" href="../../../07/22/python-project-template/">
       
-        <link rel="next" href="../../22/python-project-template/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../feed_rss_created.xml">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Hello world! - Junior's way</title>
+        <title>Пишем на Rust для Python - Junior's way</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hello-world" class="md-skip">
+        <a href="#rust-python" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hello world!
+              Пишем на Rust для Python
             
           </span>
         </div>
@@ -429,6 +429,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rust" class="md-nav__link">
+    <span class="md-ellipsis">
+      Почему Rust?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rust_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Когда нужно использовать Rust?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyo3" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyO3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Создание проекта
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python обёртка
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Публикация
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Итог
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ссылки
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -483,7 +563,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
-                        <time datetime="2023-07-16 00:00:00" class="md-ellipsis">July 16, 2023</time>
+                        <time datetime="2023-12-02 00:00:00" class="md-ellipsis">December 2, 2023</time>
                       </div>
                     </li>
                     
@@ -494,7 +574,8 @@
                           <span class="md-ellipsis">
                             in
                             
-                              <a href="../../../../category/other/">other</a></span>
+                              <a href="../../../../category/python/">python</a>, 
+                              <a href="../../../../category/rust/">rust</a></span>
                         </div>
                       </li>
                     
@@ -505,7 +586,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
                           <span class="md-ellipsis">
                             
-                              1 min read
+                              3 min read
                             
                           </span>
                         </div>
@@ -523,16 +604,129 @@
     <article class="md-content__inner md-typeset">
       
         
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">python</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">rust</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">pyo3</span>
+    
+  
+</nav>
 
 
-<h1 id="hello-world">Hello world!</h1>
-<p>Возможно здесь будет что-то интересное. Давно хотел сделать свой блог. Но скорее всего здесь будут заметки из моего лично опыта, чтобы я мог к ним вернуться со временем...</p>
+
+<h1 id="rust-python">Пишем на Rust для Python</h1>
+<p>Начинаем делать Python библиотеки на Rust.</p>
+<p>Я выступал с докладом по этой теме на PiterPy 2023. Видео можно посмотреть <a href="https://piterpy.com/talks/ea5ad52a85a742a1b81bb4ba616998f1/?referer=%2Fschedule%2Fdays%2F">здесь</a>.</p>
+<p>Сейчас я хочу текстом описать процесс создания проекта и в будущем возможно будут другие гайды на что стоит обратить внимание при использовании Rust в Python.</p>
+<p>Почему Rust? Ведь есть множество других способов написать производительный код. И да, в первую очередь мы используем другой язык программирования, чтобы ускорить Python.</p>
 <!-- more -->
 
-<p>На данный момент у меня есть несколько проектов, про которые надо бы что-то написать. Как минимум, рассказать зачем я их создал.</p>
-<p>В свободное время немного занимаюсь разрабокой на Rust. Этот язык мне интересен и я хочу попробовать его в разных областях: web, gamedev. Так как пишу на нем не часто, надо фиксировать свой опыт. Возможно кому-то будет полезно.</p>
-<p>Еще с gpt средствами писать статьи намного проще. Главное не переусердствовать.</p>
-<p>Данный блог создан с помощью <a href="https://www.mkdocs.org/">mkdocs</a> и <a href="https://squidfunk.github.io/mkdocs-material/">mkdocs-material</a>. В версии 9.2.0b0 появилась возможность добавлять статьи в блог. Плюсом можно прикрутить комменты, которые будут интегрированы на страницу, но на самом деле это issues на github. <a href="https://github.com/utterance/utterances">Вот пример проекта (utterances)</a>. Я использовал <a href="https://github.com/giscus/giscus">этот проект (giscus)</a>. Этот инструмент хранит комментарии в GitHub Discussions, что мне кажется более логичным.</p>
+<p>Альтерантивы</p>
+<ul>
+<li>Cython</li>
+<li>Numba</li>
+<li>ctypes — модуль для интеграции с языком С.</li>
+</ul>
+<p><em>Как альтернативу, я бы ещё добавил NumPy и подобные ему инструменты, так как можно сильно ускорить работу программы, начав использовать их.</em></p>
+<p>Самый главный плюс — это Rust. И вот почему...</p>
+<h2 id="rust">Почему Rust?</h2>
+<p>Помимо очевидных плюсов, которые предоставляет данный язык:</p>
+<ul>
+<li>скорость</li>
+<li>безопасность</li>
+<li>качество</li>
+</ul>
+<p>Это большое сообщество разработчиков и большое количество библиотек. Если у вас возникнут проблемы, скорее всего быстро найдутся умельцы, которые вам помогут.</p>
+<p>Самый главный плюс — это готовые библиотеки для интеграции Rust и Python. Используя их, вам не нужно выполнять пляски с бубном. Просто пишите код на одном языке и далее нативно его используете в другом.</p>
+<h2 id="rust_1">Когда нужно использовать Rust?</h2>
+<p>Как я уже подметил, в первую очередь использовать данный инструмент нужно, если у вас проблемы с производительностью. Сразу бы хотел накинуть такие кейсы для примера:</p>
+<ul>
+<li>сериализация и десериализация данных — например, парсинг JSON</li>
+<li>шифрование и дешифрование</li>
+<li>конструкции for in и различные вычисления с большим объемом данных</li>
+</ul>
+<p>Зачастую пригодится тем, кто выполняет статистические расчеты в своих проектах. Во всех остальных случаях скорее всего вам нужно решить архитектурно проблему. Например, делать систему масштабируемой.</p>
+<p>Плюс Rust можно использовать как DSL для вашей БЛ (бизнес логики). Rust имеет очень сильную систему типов и подскажет вам, если вы допустили ошибку.</p>
+<h2 id="pyo3">PyO3</h2>
+<p>Полное название Pythonium Trioxide. Сейчас самый популярный инструмент для связки Rust и Python, ИМХО.</p>
+<p>Предоставляет высокоуровневый интерфейс и вам не нужно задумываться об интеграции Rust кода с Python кодом.</p>
+<h2 id="_1">Создание проекта</h2>
+<p>maturin — пакетный менеджер для Python проектов, которые используют Rust.</p>
+<p>Он нужен для создания структуры проекта. Одной командой у нас появляются pyproject.toml, Cargo.toml и Github actions джобы для деплоя нашего проекта на pypi.</p>
+<div class="highlight"><pre><span></span><code>maturin<span class="w"> </span>init
+ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>.github/
+  workflows/
+    maturin.init
+src/
+  lib.rs
+pyproject.toml
+Cargo.toml
+</code></pre></div>
+<p>У нас почти все готово, осталось выполнить:</p>
+<div class="highlight"><pre><span></span><code>maturin<span class="w"> </span>develop
+</code></pre></div>
+<p>Обратите внимание, что Rust код скомпируется в dev режиме. Ваши бенчмарки будут работать медленнее, чем в release режиме.
+Чтобы исправить это, нужно выполнить добавить флаг <code>-r</code>:</p>
+<div class="highlight"><pre><span></span><code>maturin<span class="w"> </span>develop<span class="w"> </span>-r
+</code></pre></div>
+<p>Испольуем модуль в Python просто импортировав его:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">package</span>
+</code></pre></div>
+<h2 id="python">Python обёртка</h2>
+<p>Вы можете рядом держать Python код, чтобы упростить интерфейс использования вашей программы. Также, не мало важно, описать типы, которые необходимы для проверки через mypy, pyright и т.п.</p>
+<p>Добавляем в pyproject.toml:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[tool.maturin]</span>
+<span class="n">module-name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;package._module&quot;</span>
+</code></pre></div>
+<p>И делаем название модуля в Rust:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#[pymodule]</span>
+<span class="k">fn</span> <span class="nf">_module</span><span class="p">(</span><span class="n">_py</span>: <span class="nc">Python</span><span class="p">,</span><span class="w"> </span><span class="n">m</span>: <span class="kp">&amp;</span><span class="nc">PyModule</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nc">PyResult</span><span class="o">&lt;</span><span class="p">()</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">Ok</span><span class="p">(())</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Таким образом, мы можем импортировать ваш Rust модуль в Python:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">package</span> <span class="kn">import</span> <span class="n">_module</span>
+<span class="c1"># from . import _module</span>
+</code></pre></div>
+<p>Описываем типы в файле <code>package/_module.pyi</code> и не забываем добавить py.typed в пакет.</p>
+<h2 id="_2">Публикация</h2>
+<p>Для публикации на pypi нужно создать аккаунт на <a href="https://pypi.org/">pypi.org</a>.
+Далее нужно создать токен и сохранить его в Github secrets под переменной <code>PYPI_API_TOKEN</code>.
+maturin сам соберет и опубликует ваш пакет через github actions.</p>
+<h2 id="_3">Итог</h2>
+<p>Мы с вами научились создавать Python библиотеки на Rust (всего две команды). Теперь вы можете писать производительный код и использовать его в своих проектах.
+PyO3 имеет очень хорошую документацию и вы можете найти ответы на свои вопросы там.
+В данном гайде я не стал углубляться в детали, потому что мне лень, но буду потихоньку добавлять материал.</p>
+<p>Основной минус для меня, что мы не можем использовать весь функционал Rust.
+Например, мы не можем использовать lifetime проверки, из-за чего код приходится писать по-другому.
+Также стоит уделить внимание бенчарком, чтобы сделать ваш код максимально быстрым.
+Многое зависит от размера данных, которые вы обрабатываете и как вы пишите код на Rust.</p>
+<h2 id="_4">Ссылки</h2>
+<ul>
+<li><a href="https://piterpy.com/talks/ea5ad52a85a742a1b81bb4ba616998f1/?referer=%2Fschedule%2Fdays%2F">PiterPy 2023</a></li>
+<li><a href="https://pyo3.rs/">pyo3.rs</a></li>
+<li><a href="https://www.maturin.rs/">www.maturin.rs</a></li>
+<li><a href="https://github.com/daxartio">daxartio (Danil Akhtarov) · GitHub</a></li>
+</ul>
 
 
 

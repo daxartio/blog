@@ -2,32 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://daxartio.github.io/blog/</loc>
-         <lastmod>2023-07-22</lastmod>
+         <lastmod>2023-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://daxartio.github.io/blog/2023/07/16/hello-world/</loc>
-         <lastmod>2023-07-22</lastmod>
+         <lastmod>2023-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://daxartio.github.io/blog/2023/07/22/python-project-template/</loc>
-         <lastmod>2023-07-22</lastmod>
+         <lastmod>2023-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://daxartio.github.io/blog/2023/12/02/%D0%BF%D0%B8%D1%88%D0%B5%D0%BC-%D0%BD%D0%B0-rust-%D0%B4%D0%BB%D1%8F-python/</loc>
+         <lastmod>2023-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://daxartio.github.io/blog/archive/2023/</loc>
-         <lastmod>2023-07-22</lastmod>
+         <lastmod>2023-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://daxartio.github.io/blog/category/python/</loc>
-         <lastmod>2023-07-22</lastmod>
+         <lastmod>2023-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://daxartio.github.io/blog/category/free/</loc>
-         <lastmod>2023-07-22</lastmod>
+         <loc>https://daxartio.github.io/blog/category/rust/</loc>
+         <lastmod>2023-12-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://daxartio.github.io/blog/category/other/</loc>
+         <lastmod>2023-12-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
