@@ -15,7 +15,7 @@ install-poetry:
 
 .PHONY: install
 install:
-	poetry install
+	poetry install --no-root
 
 .PHONY: docs
 docs:
