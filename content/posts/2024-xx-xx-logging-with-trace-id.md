@@ -1,6 +1,6 @@
 ---
 draft: true
-date: 2024-01-29
+date: 2024-03-29
 slug: logging-with-trace-id
 comments: true
 authors:
