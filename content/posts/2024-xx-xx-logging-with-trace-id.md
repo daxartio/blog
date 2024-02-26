@@ -1,6 +1,7 @@
 ---
 draft: true
 date: 2024-01-29
+slug: logging-with-trace-id
 comments: true
 authors:
   - daxartio

@@ -1,5 +1,6 @@
 ---
 date: 2023-07-22
+slug: python-project-template
 comments: true
 authors:
   - daxartio

@@ -1,5 +1,6 @@
 ---
 date: 2023-07-16
+slug: hello-world
 comments: true
 authors:
   - daxartio

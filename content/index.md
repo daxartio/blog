@@ -1,1 +1,4 @@
-# Junior's way
+---
+hide:
+  - footer
+---

@@ -1,10 +1,15 @@
-site_name: Junior's way
+site_name: Software Architect
 site_description: A blog about programming and life
 site_url: https://daxartio.github.io/blog/
 docs_dir: content
-locale: en
 
-copyright: Copyright &copy; 2023 Danil Akhtarov
+copyright: Copyright &copy; 2024 Danil Akhtarov
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/daxartio
+    - icon: material/card-account-details
+      link: https://daxartio.github.io
 
 nav:
   - Home: index.md
@@ -14,15 +19,30 @@ theme:
   custom_dir: overrides
   language: en
   features:
+    - navigation.instant
     - navigation.expand
+    - navigation.footer
   palette:
-    primary: black
-    accent: yellow
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: black
+      accent: yellow
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: black
+      accent: yellow
+  icon:
+    repo: fontawesome/brands/github
 
 plugins:
   - search:
       lang: en
   - tags
+  - social
   - blog:
       blog_dir: .
   - rss:
