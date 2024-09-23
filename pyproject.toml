@@ -6,7 +6,7 @@ authors = ["Danil Akhtarov <daxartio@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 mkdocs = "^1.5.3"
 mkdocs-material = { version = "^9.4.14", extras = [ "imaging" ]}
 mkdocs-rss-plugin = "^1.7.0"
