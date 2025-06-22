@@ -5,18 +5,22 @@ help:
 	@echo "Usage: make [target]"
 	@echo ""
 	@echo "Targets:"
-	@echo "  install-poetry  Install poetry"
+	@echo "  install-uv      Install uv"
 	@echo "  install         Install dependencies"
 	@echo "  docs            Build documentation"
 
 .PHONY: install-poetry
-install-poetry:
-	pip install poetry
+install-uv:
+	pip install uv
 
 .PHONY: install
 install:
-	poetry install --no-root
+	uv sync --frozen --no-install-project --no-dev
 
 .PHONY: docs
 docs:
-	poetry run mkdocs build
+	uv run --no-project mkdocs build
+
+.PHONY: serve
+serve:
+	uv run --no-project mkdocs serve

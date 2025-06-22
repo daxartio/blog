@@ -1,9 +1,9 @@
 site_name: Software Architect
-site_description: A blog about programming and life
+site_description: A blog about programming
 site_url: https://daxartio.github.io/blog/
 docs_dir: content
 
-copyright: Copyright &copy; 2024 Danil Akhtarov
+copyright: Copyright &copy; 2025 Danil Akhtarov
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -42,7 +42,7 @@ plugins:
   - search:
       lang: en
   - tags
-  - social
+  # - social
   - blog:
       blog_dir: .
   - rss:
